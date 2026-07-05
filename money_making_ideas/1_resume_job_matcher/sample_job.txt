@@ -1,0 +1,9 @@
+We are hiring a Data Scientist to join our analytics team.
+Requirements:
+- Strong Python skills including Pandas, NumPy, and Scikit-Learn
+- Experience building and deploying machine learning models
+- Experience with SQL and data warehousing
+- Familiarity with Docker and REST API deployment (Flask)
+- Experience with A/B testing and experiment design
+- Strong communication skills to present findings to stakeholders
+- Experience with cloud platforms such as AWS

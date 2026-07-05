@@ -1,0 +1,13 @@
+Today we are going to talk about linear regression, one of the most fundamental algorithms in machine learning.
+Linear regression tries to model the relationship between a dependent variable and one or more independent variables by fitting a straight line to the data.
+The most common method for fitting this line is called ordinary least squares, which minimizes the sum of squared residuals between the observed values and the values predicted by the line.
+A residual is simply the difference between the actual value and the predicted value for a given data point.
+When we have only one independent variable, we call this simple linear regression, and the model can be represented as y equals b0 plus b1 times x.
+When we have multiple independent variables, we call this multiple linear regression, and it is important to check for multicollinearity between the independent variables before fitting the model.
+Multicollinearity happens when two or more independent variables are highly correlated with each other, which can make the coefficients of the model unstable and hard to interpret.
+One common way to detect multicollinearity is to compute the variance inflation factor, or VIF, for each independent variable.
+Once the model has been fitted, we evaluate its performance using metrics such as R squared, adjusted R squared, and root mean squared error.
+R squared tells us the proportion of variance in the dependent variable that is explained by the independent variables in the model.
+It is important to remember that a high R squared does not always mean the model is good, since it can be inflated simply by adding more variables to the model.
+That is why adjusted R squared is often preferred, since it penalizes the addition of variables that do not improve the model significantly.
+Finally, before deploying a linear regression model, we should always check the assumptions of linearity, independence, homoscedasticity, and normality of residuals.

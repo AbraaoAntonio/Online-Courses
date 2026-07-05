@@ -1,5 +1,7 @@
 # Summary
 
+See [`money_making_ideas/`](money_making_ideas/) for 5 sellable-product proof-of-concepts built on the skills from these courses.
+
 Here are some of the online courses I have been taking.
 
 Each course contains the source codes alongside with the datasets used. Each course also has some videos that explain the source code as well as the concepts. However, keep in mind that the videos are not meant to teach anything to anyone, they were just recorded so that I could get a better grasp of the material.

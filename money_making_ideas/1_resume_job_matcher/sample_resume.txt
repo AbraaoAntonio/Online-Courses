@@ -1,0 +1,6 @@
+Jane Doe
+Data Analyst with 3 years of experience in Python, SQL, and Excel.
+Built dashboards in Tableau to track sales KPIs.
+Cleaned and merged data using Pandas.
+Worked with stakeholders to gather reporting requirements.
+Basic experience with statistics and A/B testing.
