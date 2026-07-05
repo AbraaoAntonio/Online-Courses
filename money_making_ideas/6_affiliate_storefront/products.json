@@ -1,0 +1,68 @@
+[
+  {
+    "id": "p1",
+    "name": "Precision Gooseneck Kettle",
+    "category": "Brewing Gear",
+    "price": "$45.99",
+    "description": "Temperature-controlled gooseneck kettle for pour-over coffee.",
+    "why_we_recommend": "The #1 upgrade for anyone doing pour-over at home - controls pour speed and temperature, which are the two biggest variables in a good cup.",
+    "network": "Amazon Associates",
+    "commission_est": "4%",
+    "affiliate_url": "https://www.amazon.com/dp/REPLACE_ASIN?tag=REPLACE_WITH_YOUR_AFFILIATE_TAG-20"
+  },
+  {
+    "id": "p2",
+    "name": "Conical Burr Grinder",
+    "category": "Brewing Gear",
+    "price": "$79.00",
+    "description": "Adjustable conical burr grinder for consistent grind size.",
+    "why_we_recommend": "Grind consistency matters more than the brewer itself. This is the single highest-impact purchase for coffee quality under $100.",
+    "network": "Amazon Associates",
+    "commission_est": "4%",
+    "affiliate_url": "https://www.amazon.com/dp/REPLACE_ASIN?tag=REPLACE_WITH_YOUR_AFFILIATE_TAG-20"
+  },
+  {
+    "id": "p3",
+    "name": "Ceramic Pour-Over Dripper",
+    "category": "Brewing Gear",
+    "price": "$24.50",
+    "description": "Classic 1-4 cup ceramic dripper, compatible with standard filters.",
+    "why_we_recommend": "Retains heat better than plastic, and it's the dripper most online recipes are calibrated for - easiest starting point for beginners.",
+    "network": "Amazon Associates",
+    "commission_est": "4%",
+    "affiliate_url": "https://www.amazon.com/dp/REPLACE_ASIN?tag=REPLACE_WITH_YOUR_AFFILIATE_TAG-20"
+  },
+  {
+    "id": "p4",
+    "name": "Digital Coffee Scale with Timer",
+    "category": "Brewing Gear",
+    "price": "$21.99",
+    "description": "0.1g precision scale with built-in brew timer.",
+    "why_we_recommend": "Ratio and timing are how you make a recipe repeatable. This is the cheapest way to go from 'guessing' to 'dialed in'.",
+    "network": "Amazon Associates",
+    "commission_est": "4%",
+    "affiliate_url": "https://www.amazon.com/dp/REPLACE_ASIN?tag=REPLACE_WITH_YOUR_AFFILIATE_TAG-20"
+  },
+  {
+    "id": "p5",
+    "name": "Single-Origin Coffee Subscription",
+    "category": "Beans",
+    "price": "$18/mo",
+    "description": "Monthly subscription delivering freshly roasted single-origin beans.",
+    "why_we_recommend": "Recurring subscription products often pay recurring commissions, not just a one-time cut - worth prioritizing these in a niche store.",
+    "network": "ShareASale",
+    "commission_est": "20% recurring",
+    "affiliate_url": "https://www.shareasale.com/r.cfm?REPLACE_WITH_YOUR_MERCHANT_AND_AFFILIATE_ID"
+  },
+  {
+    "id": "p6",
+    "name": "Online Home Barista Course",
+    "category": "Education",
+    "price": "$49.00",
+    "description": "Self-paced video course teaching espresso and pour-over technique.",
+    "why_we_recommend": "Digital products/courses often pay 30-50%+ commission with no shipping/returns risk for the merchant - much higher margin per referral than physical goods.",
+    "network": "ClickBank",
+    "commission_est": "40%",
+    "affiliate_url": "https://REPLACE_WITH_YOUR_CLICKBANK_HOPLINK"
+  }
+]

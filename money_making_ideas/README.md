@@ -16,6 +16,7 @@ folder's README for the specific launch plan.
 | 3 | StayWise — churn prediction for subscription businesses | `3_churn_predictor/` | Gyms, SaaS, subscriptions | $99/mo |
 | 4 | PricePilot — demand forecast & price recommendation | `4_dynamic_pricing/` | Etsy/Shopify sellers | $29/mo |
 | 5 | CourseClip — auto show notes & quizzes from transcripts | `5_course_content_repurposer/` | Course creators, L&D teams | $15/video |
+| 6 | Affiliate Storefront — curated store, zero inventory, commission-only | `6_affiliate_storefront/` | End consumers (via merchant) | Commission per sale |
 
 ## Quick start — run any POC
 

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}The Home Barista Shelf{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">The Home Barista Shelf</a>
+    <nav><a href="/analytics">Analytics</a></nav>
+  </header>
+
+  <div class="disclosure">
+    Disclosure: This page contains affiliate links. If you buy through one of them,
+    we may earn a small commission at no extra cost to you. We only recommend
+    products we've researched and would use ourselves.
+  </div>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>Built as a proof-of-concept affiliate storefront. Replace placeholder
+    affiliate links in products.json with your real Amazon Associates /
+    ShareASale / ClickBank links before going live.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Gear We Actually Recommend for Home Coffee</h1>
+  <p class="subtitle">A small, curated shelf - not a 10,000-SKU catalog. Every pick below is chosen for a reason, explained under the product.</p>
+
+  {% for cat, products in by_category.items() %}
+    <h2>{{ cat }}</h2>
+    <div class="grid">
+      {% for p in products %}
+        <div class="card">
+          <h3>{{ p.name }}</h3>
+          <p class="price">{{ p.price }}</p>
+          <p>{{ p.description }}</p>
+          <p class="why"><b>Why we recommend it:</b> {{ p.why_we_recommend }}</p>
+          <a class="cta" href="/go/{{ p.id }}">View Deal &rarr;</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock %}

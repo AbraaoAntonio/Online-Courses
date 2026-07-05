@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ category }}</h1>
+  <div class="grid">
+    {% for p in products %}
+      <div class="card">
+        <h3>{{ p.name }}</h3>
+        <p class="price">{{ p.price }}</p>
+        <p>{{ p.description }}</p>
+        <p class="why"><b>Why we recommend it:</b> {{ p.why_we_recommend }}</p>
+        <a class="cta" href="/go/{{ p.id }}">View Deal &rarr;</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

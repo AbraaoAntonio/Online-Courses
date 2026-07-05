@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Analytics{% endblock %}
+{% block content %}
+  <h1>Click Analytics</h1>
+  <p>Total outbound clicks tracked: <b>{{ total }}</b></p>
+  <table>
+    <tr><th>Product</th><th>Clicks</th></tr>
+    {% for row in counts %}
+      <tr><td>{{ row.product_name }}</td><td>{{ row.clicks }}</td></tr>
+    {% else %}
+      <tr><td colspan="2">No clicks logged yet - visit the homepage and click a "View Deal" button.</td></tr>
+    {% endfor %}
+  </table>
+  <p><i>In production, protect this route with a login - it's open here only for the POC.</i></p>
+{% endblock %}
