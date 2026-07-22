@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Encontre o melhor preço para o produto do seu cliente</h1>
+  <p class="subtitle">
+    Envie a foto e/ou a descrição do produto que o cliente te mandou.
+    Nós buscamos em vários sites e mostramos onde está mais barato.
+  </p>
+
+  {% if error %}
+    <div class="alert alert-error">{{ error }}</div>
+  {% endif %}
+
+  {% if not vision_enabled %}
+    <div class="alert alert-info">
+      Reconhecimento automático de imagem está desativado (nenhuma
+      <code>ANTHROPIC_API_KEY</code> configurada). Você ainda pode enviar uma
+      imagem, mas precisa complementar com uma descrição em texto.
+    </div>
+  {% endif %}
+
+  <form action="{{ url_for('buscar') }}" method="post" enctype="multipart/form-data" class="search-form">
+    <label for="image">Foto do produto (opcional)</label>
+    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp">
+
+    <label for="description">Descrição do produto</label>
+    <textarea id="description" name="description" rows="3"
+      placeholder="Ex: fone de ouvido bluetooth JBL Tune 510BT preto"></textarea>
+
+    <button type="submit">Comparar preços</button>
+  </form>
+{% endblock %}

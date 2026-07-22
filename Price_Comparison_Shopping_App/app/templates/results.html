@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+  <a href="{{ url_for('index') }}" class="back-link">&larr; Nova busca</a>
+  <h1>Resultados para: "{{ query }}"</h1>
+  {% if image_note %}<p class="subtitle">{{ image_note }}</p>{% endif %}
+
+  {% if best %}
+    <div class="alert alert-success">
+      Melhor preço: <strong>{{ best.title }}</strong> por
+      <strong>{{ best.price|brl }}</strong> em {{ best.site }}.
+      <a href="{{ best.url }}" target="_blank" rel="noopener noreferrer">Abrir link</a>
+    </div>
+  {% else %}
+    <div class="alert alert-info">
+      Não encontramos preços automaticamente em nenhum site. Confira os
+      links de busca manual abaixo.
+    </div>
+  {% endif %}
+
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Site</th>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in results %}
+        <tr class="{{ 'best-row' if best and item is sameas best else '' }}">
+          <td>{{ item.site }}</td>
+          <td>
+            {{ item.title }}
+            {% if item.note %}<div class="note">{{ item.note }}</div>{% endif %}
+          </td>
+          <td>{{ item.price|brl }}</td>
+          <td><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Abrir</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
